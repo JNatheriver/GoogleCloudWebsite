@@ -1,0 +1,32 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: "February 2023 - Present",
+        title: "Freelancer | Software Development",
+        description: "Executed migration of Google Places API, automated financial strategy with exchange API and TA-Lib, automated tests and data extraction with Selenium. Utilized Kanban methodology for reporting in Trello. Elevated system capabilities and enhanced team efficiency. Adhered to Agile principles for efficient development cycles."
+    },
+
+    {
+        date: "November 2022 - Present",
+        title: "Game Studio Initiative | Software Development",
+        description: "Initiated game studio establishment, designed Roguelike, Deckbuilder game using GDScript and C# with GDExtension. Demonstrated project management skills and used Git for version control. Successfully registered a game with Indautor, showcasing legal understanding in the creative industry."
+    },
+
+    {
+        date: "January 2022 - October 2022",
+        title: "Freelancer | Smart Contract Developer (Ethereum Blockchain)",
+        description: "Proficiently developed ERC20 and ERC721 smart contracts in Hardhat with Solidity. Ensured compliance with industry standards, conducted thorough testing and debugging. Launched ERC20 and ERC721 smart contracts on the Ethereum blockchain, showcasing efficiency in gas consumption. Attained deep understanding of Ethereum blockchain ecosystem."
+    }
+]
+---
+<ol class="relative border-s border-gray-200 ml-3">  
+    {
+        EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }                
+</ol>
